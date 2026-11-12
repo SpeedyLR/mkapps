@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datei-Manager – Datenschutz</title>
+<meta name="description" content="Datenschutzerklärung der Android-App Datei-Manager.">
+<style>
+  :root {
+    --page: #F8FAFC; --card: #FFFFFF; --line: #E2E8F0; --text: #0F172A; --muted: #64748B;
+    --header: #0F172A; --accent: #2563EB;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --page: #0F172A; --card: #1E293B; --line: #334155; --text: #F8FAFC; --muted: #94A3B8; --header: #1E293B; --accent: #60A5FA; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--header); color: #F8FAFC; padding: 18px 16px; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { margin: 0; font-size: 1.35rem; }
+  header nav a { color: #F8FAFC; text-decoration: none; margin-left: 14px; font-size: .95rem; }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  main { padding: 18px 16px 40px; }
+  h2 { color: var(--accent); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; margin: 26px 0 8px; }
+  h3 { font-size: 1rem; margin: 14px 0 4px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .card p { margin: 6px 0; }
+  ul { margin: 6px 0; padding-left: 20px; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  code { overflow-wrap: anywhere; }
+  footer { border-top: 1px solid var(--line); padding: 16px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Datenschutz · Privacy</h1>
+    <nav><a href="index.html">Startseite</a><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ═══ DEUTSCH ═══ -->
+  <section id="de" lang="de">
+    <h2>Datenschutzerklärung</h2>
+    <div class="card">
+      <p>Diese Erklärung gilt für die Android-App <strong>Datei-Manager</strong> (Paket <code>com.mk.dateimanager</code>). Kurz gesagt: Die App sammelt keine Daten über dich, hat keinen eigenen Server, zeigt keine Werbung und nutzt keine Analyse- oder Tracking-Dienste.</p>
+      <p class="muted">Stand: 12.11.2026</p>
+    </div>
+
+    <h2>Verantwortlich und Kontakt</h2>
+    <div class="card">
+      <p>Fragen zum Datenschutz und zur App: <a href="mailto:mail.prj@gmx.de">mail.prj@gmx.de</a></p>
+    </div>
+
+    <h2>Was auf deinem Gerät verarbeitet wird</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Dateien:</strong> Die App liest und bearbeitet Dateien auf deinem Gerät nur, um sie anzuzeigen und die Aktionen auszuführen, die du auslöst. Dafür fragt sie die Android-Berechtigung für den Dateizugriff an.</li>
+        <li><strong>Einstellungen, Favoriten, Ordnerpaare, Verlauf:</strong> liegen nur in der App auf deinem Gerät.</li>
+        <li><strong>Zugangsdaten</strong> zu NAS, FTP, WebDAV und Cloud-Konten: verschlüsselt im geschützten Speicher von Android (Android Keystore). Sie verlassen das Gerät nur, wenn du selbst eine Sicherung mit Kennwort anlegst – dann verschlüsselt in dieser Datei.</li>
+        <li><strong>Tresor:</strong> Dateien werden mit AES-256 auf dem Gerät verschlüsselt; die PIN wird nicht gespeichert.</li>
+        <li><strong>Diagnoseprotokoll:</strong> bleibt auf dem Gerät und wird nur weitergegeben, wenn du es selbst teilst.</li>
+        <li><strong>Pro-Freischaltung:</strong> wird offline auf dem Gerät geprüft, ohne Übertragung von Daten.</li>
+      </ul>
+    </div>
+
+    <h2>Verbindungen ins Netz</h2>
+    <div class="card">
+      <p>Die App stellt nur Verbindungen her, die du einrichtest oder auslöst: zu deinem NAS bzw. Server (SMB, FTP, SFTP, WebDAV), zu Google Drive und Dropbox, beim Wake-on-LAN ein Wecksignal im eigenen Netz und für das Abspielen von Netzwerkmedien einen Server nur auf dem Gerät selbst (127.0.0.1). Die Daten fließen direkt zwischen deinem Gerät und dem jeweiligen Dienst. Für diese Dienste gelten deren eigene Datenschutzbestimmungen.</p>
+    </div>
+
+    <h2>Google Drive</h2>
+    <div class="card">
+      <h3>Zugriff</h3>
+      <p>Die Anmeldung erfolgt auf der Seite von Google (OAuth 2.0 mit PKCE); die App sieht dein Kennwort nie. Angefragt werden die Berechtigung <code>https://www.googleapis.com/auth/drive</code> – damit die App deine Drive-Dateien anzeigen, öffnen, kopieren, hochladen, umbenennen, löschen und abgleichen kann – sowie <code>openid</code> und <code>email</code>, um anzuzeigen, welches Konto verbunden ist.</p>
+      <h3>Nutzung</h3>
+      <p>Google-Nutzerdaten werden ausschließlich für die genannten Dateifunktionen verwendet, die du in der App selbst auslöst. Sie werden nicht für Werbung genutzt, nicht verkauft, nicht an Dritte weitergegeben, nicht zum Trainieren von KI-Modellen verwendet und von niemandem außer dir eingesehen.</p>
+      <h3>Speicherung</h3>
+      <p>Gespeichert werden nur der Zugangs- und Erneuerungsschlüssel sowie die E-Mail-Adresse des Kontos – verschlüsselt auf deinem Gerät. Es gibt keinen Server des Entwicklers, an den Google-Daten übertragen werden.</p>
+      <h3>Widerruf und Löschung</h3>
+      <p>In der App unter Cloud → ⋮ → „Abmelden“ werden Schlüssel und Verbindung vom Gerät gelöscht. Den Zugriff der App kannst du jederzeit unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> entziehen.</p>
+      <p>Die Nutzung und Weitergabe von Informationen, die über Google-APIs empfangen werden, entspricht der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung („Limited Use“).</p>
+    </div>
+
+    <h2>Dropbox</h2>
+    <div class="card">
+      <p>Die Anmeldung erfolgt auf der Seite von Dropbox; die App erhält nur einen Zugangsschlüssel, der verschlüsselt auf dem Gerät bleibt. Er wird ausschließlich für die Dateifunktionen genutzt, die du auslöst. Abmelden in der App löscht ihn; den Zugriff kannst du zusätzlich in den Dropbox-Einstellungen unter „Verbundene Apps“ entziehen.</p>
+    </div>
+
+    <h2>Deine Rechte</h2>
+    <div class="card">
+      <p>Da der Entwickler keine personenbezogenen Daten von dir erhält oder speichert, liegen alle Daten allein auf deinem Gerät und bei den Diensten, die du selbst verbindest. Du kannst sie jederzeit löschen, indem du Verbindungen abmeldest, die App-Daten löschst oder die App deinstallierst.</p>
+    </div>
+
+    <h2>Änderungen</h2>
+    <div class="card">
+      <p>Ändert sich die App so, dass diese Erklärung angepasst werden muss, wird diese Seite aktualisiert und das Datum oben geändert.</p>
+    </div>
+  </section>
+
+  <!-- ═══ ENGLISH ═══ -->
+  <section id="en" lang="en">
+    <h2>Privacy policy</h2>
+    <div class="card">
+      <p>This policy applies to the Android app <strong>Datei-Manager</strong> (package <code>com.mk.dateimanager</code>). In short: the app does not collect data about you, has no server of its own, shows no ads and uses no analytics or tracking services.</p>
+      <p class="muted">Last updated: 12 November 2026</p>
+    </div>
+
+    <h2>Controller and contact</h2>
+    <div class="card">
+      <p>Questions about privacy or the app: <a href="mailto:mail.prj@gmx.de">mail.prj@gmx.de</a></p>
+    </div>
+
+    <h2>What is processed on your device</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Files:</strong> the app reads and changes files on your device only to show them and to carry out the actions you trigger. For this it requests Android's file access permission.</li>
+        <li><strong>Settings, favourites, folder pairs, history:</strong> stored only within the app on your device.</li>
+        <li><strong>Credentials</strong> for NAS, FTP, WebDAV and cloud accounts: encrypted in Android's protected storage (Android Keystore). They only leave the device if you create a password-protected backup yourself – then encrypted inside that file.</li>
+        <li><strong>Vault:</strong> files are encrypted with AES-256 on the device; the PIN is not stored.</li>
+        <li><strong>Diagnostic log:</strong> stays on the device and is only passed on if you share it yourself.</li>
+        <li><strong>Pro unlock:</strong> verified offline on the device, without transmitting any data.</li>
+      </ul>
+    </div>
+
+    <h2>Network connections</h2>
+    <div class="card">
+      <p>The app only connects where you set it up or trigger it: to your NAS or server (SMB, FTP, SFTP, WebDAV), to Google Drive and Dropbox, a wake-up signal in your own network for Wake-on-LAN, and a server on the device itself only (127.0.0.1) for playing network media. Data travels directly between your device and the respective service. Those services' own privacy policies apply.</p>
+    </div>
+
+    <h2>Google Drive</h2>
+    <div class="card">
+      <h3>Access</h3>
+      <p>You sign in on Google's own page (OAuth 2.0 with PKCE); the app never sees your password. It requests the scope <code>https://www.googleapis.com/auth/drive</code> – so that it can list, open, copy, upload, rename, delete and sync your Drive files – plus <code>openid</code> and <code>email</code> to show which account is connected.</p>
+      <h3>Use</h3>
+      <p>Google user data is used solely for these file functions, triggered by you in the app. It is not used for advertising, not sold, not shared with third parties, not used to train AI models and not read by anyone but you.</p>
+      <h3>Storage</h3>
+      <p>Only the access and refresh tokens and the account's e-mail address are stored – encrypted on your device. There is no developer server to which Google data is transmitted.</p>
+      <h3>Revocation and deletion</h3>
+      <p>In the app, Cloud → ⋮ → “Sign out” deletes the tokens and the connection from the device. You can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+      <p>The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </div>
+
+    <h2>Dropbox</h2>
+    <div class="card">
+      <p>You sign in on Dropbox's own page; the app only receives an access token, which stays encrypted on the device and is used solely for the file functions you trigger. Signing out in the app deletes it; you can also revoke access in your Dropbox settings under “Connected apps”.</p>
+    </div>
+
+    <h2>Your rights</h2>
+    <div class="card">
+      <p>As the developer receives and stores no personal data from you, all data remains on your device and with the services you connect yourself. You can delete it at any time by signing out of connections, clearing the app data or uninstalling the app.</p>
+    </div>
+
+    <h2>Changes</h2>
+    <div class="card">
+      <p>If the app changes in a way that requires this policy to be updated, this page will be updated and the date above changed.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Datei-Manager · <a href="index.html">Startseite / Home</a> · Kontakt / Contact: <a href="mailto:mail.prj@gmx.de">mail.prj@gmx.de</a></div>
+</footer>
+</body>
+</html>

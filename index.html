@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datei-Manager – Android-App</title>
+<meta name="description" content="Datei-Manager für Android: Dateien, NAS und Cloud an einem Ort.">
+<style>
+  :root {
+    --page: #F8FAFC; --card: #FFFFFF; --line: #E2E8F0; --text: #0F172A; --muted: #64748B;
+    --header: #0F172A; --accent: #2563EB;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --page: #0F172A; --card: #1E293B; --line: #334155; --text: #F8FAFC; --muted: #94A3B8; --header: #1E293B; --accent: #60A5FA; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: var(--header); color: #F8FAFC; padding: 18px 16px; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { margin: 0; font-size: 1.35rem; }
+  header nav a { color: #F8FAFC; text-decoration: none; margin-left: 14px; font-size: .95rem; }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  main { padding: 18px 16px 40px; }
+  h2 { color: var(--accent); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; margin: 26px 0 8px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .card p { margin: 6px 0; }
+  ul { margin: 6px 0; padding-left: 20px; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--line); padding: 16px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Datei-Manager</h1>
+    <nav><a href="#de">Deutsch</a><a href="#en">English</a><a href="datenschutz.html">Datenschutz / Privacy</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="de" lang="de">
+    <h2>Die App</h2>
+    <div class="card">
+      <p><strong>Datei-Manager</strong> ist eine Android-App (Paket <code>com.mk.dateimanager</code>), die Dateien auf dem Gerät, im Heimnetz und in der Cloud an einem Ort zeigt.</p>
+      <ul>
+        <li>Dateien verwalten: kopieren, verschieben, umbenennen, Papierkorb, Archive, Suche, Favoriten</li>
+        <li>Netzwerk: SMB, FTP, SFTP und WebDAV (z. B. NAS), Wake-on-LAN</li>
+        <li>Cloud: Google Drive und Dropbox, mehrere Konten</li>
+        <li>Zwei Fenster, Ordner vergleichen, Ordner-Sync zwischen Handy und NAS/Cloud</li>
+        <li>Tresor mit AES-256-Verschlüsselung, Bild-, Video-, Text- und PDF-Betrachter</li>
+        <li>Speicheranalyse und Bereinigung</li>
+      </ul>
+    </div>
+
+    <h2>Google Drive und Dropbox</h2>
+    <div class="card">
+      <p>Die Anmeldung läuft auf der Seite des Anbieters – die App sieht dein Kennwort nie. Sie erhält nur einen Zugangsschlüssel, der verschlüsselt auf deinem Gerät bleibt. Die App nutzt den Zugriff ausschließlich, um deine Dateien anzuzeigen und die Aktionen auszuführen, die du selbst auslöst (öffnen, kopieren, hochladen, löschen, abgleichen).</p>
+      <p>Es gibt keinen eigenen Server: Daten fließen direkt zwischen deinem Gerät und dem Anbieter. Details stehen in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    </div>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>The app</h2>
+    <div class="card">
+      <p><strong>Datei-Manager</strong> is an Android app (package <code>com.mk.dateimanager</code>) that shows the files on your device, in your home network and in the cloud in one place.</p>
+      <ul>
+        <li>File management: copy, move, rename, recycle bin, archives, search, favourites</li>
+        <li>Network: SMB, FTP, SFTP and WebDAV (e.g. NAS), Wake-on-LAN</li>
+        <li>Cloud: Google Drive and Dropbox, several accounts</li>
+        <li>Dual pane, folder comparison, folder sync between phone and NAS/cloud</li>
+        <li>Vault with AES-256 encryption, image, video, text and PDF viewers</li>
+        <li>Storage analysis and clean-up</li>
+      </ul>
+    </div>
+
+    <h2>Google Drive and Dropbox</h2>
+    <div class="card">
+      <p>You sign in on the provider's own page – the app never sees your password. It only receives an access token, which stays encrypted on your device. The app uses this access solely to show your files and to carry out the actions you trigger yourself (open, copy, upload, delete, sync).</p>
+      <p>There is no server of our own: data travels directly between your device and the provider. See the <a href="datenschutz.html#en">privacy policy</a> for details.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Datei-Manager · <a href="datenschutz.html">Datenschutzerklärung / Privacy policy</a> · Kontakt / Contact: <a href="mailto:mail.prj@gmx.de">mail.prj@gmx.de</a></div>
+</footer>
+</body>
+</html>
