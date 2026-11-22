@@ -48,7 +48,7 @@
     <h2>Datenschutzerklärung</h2>
     <div class="card">
       <p>Diese Erklärung gilt für die Android-App <strong>Datei-Manager</strong> (Paket <code>com.mk.dateimanager</code>). Kurz gesagt: Die App sammelt keine Daten über dich, hat keinen eigenen Server, zeigt keine Werbung und nutzt keine Analyse- oder Tracking-Dienste.</p>
-      <p class="muted">Stand: 12.11.2026</p>
+      <p class="muted">Stand: 22.11.2026</p>
     </div>
 
     <h2>Verantwortlich und Kontakt</h2>
@@ -62,7 +62,10 @@
         <li><strong>Dateien:</strong> Die App liest und bearbeitet Dateien auf deinem Gerät nur, um sie anzuzeigen und die Aktionen auszuführen, die du auslöst. Dafür fragt sie die Android-Berechtigung für den Dateizugriff an.</li>
         <li><strong>Einstellungen, Favoriten, Ordnerpaare, Verlauf:</strong> liegen nur in der App auf deinem Gerät.</li>
         <li><strong>Zugangsdaten</strong> zu NAS, FTP, WebDAV und Cloud-Konten: verschlüsselt im geschützten Speicher von Android (Android Keystore). Sie verlassen das Gerät nur, wenn du selbst eine Sicherung mit Kennwort anlegst – dann verschlüsselt in dieser Datei.</li>
-        <li><strong>Tresor:</strong> Dateien werden mit AES-256 auf dem Gerät verschlüsselt; die PIN wird nicht gespeichert.</li>
+        <li><strong>Tresor:</strong> Dateien werden mit AES-256 auf dem Gerät verschlüsselt; die PIN wird nicht gespeichert. Verschlüsselte Ablagen auf deinem NAS oder in der Cloud werden genauso auf dem Gerät verschlüsselt – auf dem Server liegen nur verschlüsselte Daten.</li>
+        <li><strong>App-Sperre und Fingerabdruck:</strong> Die PIN der App-Sperre wird nur als nicht umkehrbarer Prüfwert im geschützten Speicher abgelegt. Den Fingerabdruck prüft Android selbst; die App erhält keine Fingerabdruckdaten.</li>
+        <li><strong>Fotos teilen:</strong> Auf Wunsch entfernt die App vor dem Teilen Aufnahmeort und Kameradaten aus einer Kopie. Diese Kopie liegt nur kurz im Zwischenspeicher der App und wird nach spätestens einer Stunde gelöscht.</li>
+        <li><strong>Inhaltssuche und Speicher-Regeln:</strong> laufen nur auf dem Gerät; durchsuchte Inhalte werden weder gespeichert noch übertragen.</li>
         <li><strong>Diagnoseprotokoll:</strong> bleibt auf dem Gerät und wird nur weitergegeben, wenn du es selbst teilst.</li>
         <li><strong>Pro-Freischaltung:</strong> wird offline auf dem Gerät geprüft, ohne Übertragung von Daten.</li>
       </ul>
@@ -71,6 +74,8 @@
     <h2>Verbindungen ins Netz</h2>
     <div class="card">
       <p>Die App stellt nur Verbindungen her, die du einrichtest oder auslöst: zu deinem NAS bzw. Server (SMB, FTP, SFTP, WebDAV), zu Google Drive und Dropbox, beim Wake-on-LAN ein Wecksignal im eigenen Netz und für das Abspielen von Netzwerkmedien einen Server nur auf dem Gerät selbst (127.0.0.1). Die Daten fließen direkt zwischen deinem Gerät und dem jeweiligen Dienst. Für diese Dienste gelten deren eigene Datenschutzbestimmungen.</p>
+      <p><strong>Server im Heimnetz – nur wenn du sie startest:</strong> PC-Zugriff (FTP-Server) und Browser-Zugriff (Webseite) machen den gewählten Speicher für Geräte in deinem WLAN erreichbar. Der Browser-Zugriff verlangt einen Zugangscode, der bei jedem Start neu entsteht, nimmt nur Geräte aus dem eigenen Netz an und überträgt – wie FTP – unverschlüsselt. Beide laufen, bis du sie beendest; eine Benachrichtigung zeigt das an.</p>
+      <p><strong>TV-Streaming:</strong> Um Fernseher zu finden, schickt die App Suchanfragen in dein WLAN (SSDP und mDNS). Beim Abspielen holt sich der gewählte Fernseher die Datei über einen Server, der nur Geräte im eigenen Netz bedient; Chromecast-Geräte werden direkt im Heimnetz gesteuert. Daten gehen dabei nicht ins Internet.</p>
     </div>
 
     <h2>Google Drive</h2>
@@ -107,7 +112,7 @@
     <h2>Privacy policy</h2>
     <div class="card">
       <p>This policy applies to the Android app <strong>Datei-Manager</strong> (package <code>com.mk.dateimanager</code>). In short: the app does not collect data about you, has no server of its own, shows no ads and uses no analytics or tracking services.</p>
-      <p class="muted">Last updated: 12 November 2026</p>
+      <p class="muted">Last updated: 22 November 2026</p>
     </div>
 
     <h2>Controller and contact</h2>
@@ -121,7 +126,10 @@
         <li><strong>Files:</strong> the app reads and changes files on your device only to show them and to carry out the actions you trigger. For this it requests Android's file access permission.</li>
         <li><strong>Settings, favourites, folder pairs, history:</strong> stored only within the app on your device.</li>
         <li><strong>Credentials</strong> for NAS, FTP, WebDAV and cloud accounts: encrypted in Android's protected storage (Android Keystore). They only leave the device if you create a password-protected backup yourself – then encrypted inside that file.</li>
-        <li><strong>Vault:</strong> files are encrypted with AES-256 on the device; the PIN is not stored.</li>
+        <li><strong>Vault:</strong> files are encrypted with AES-256 on the device; the PIN is not stored. Encrypted storages on your NAS or in the cloud are encrypted on the device in the same way – the server only holds encrypted data.</li>
+        <li><strong>App lock and fingerprint:</strong> the app lock PIN is only stored as a non-reversible check value in protected storage. Android itself checks the fingerprint; the app never receives fingerprint data.</li>
+        <li><strong>Sharing photos:</strong> if you choose, the app removes location and camera data from a copy before sharing. This copy stays briefly in the app's cache and is deleted after one hour at the latest.</li>
+        <li><strong>Content search and storage rules:</strong> run on the device only; searched content is neither stored nor transmitted.</li>
         <li><strong>Diagnostic log:</strong> stays on the device and is only passed on if you share it yourself.</li>
         <li><strong>Pro unlock:</strong> verified offline on the device, without transmitting any data.</li>
       </ul>
@@ -130,6 +138,8 @@
     <h2>Network connections</h2>
     <div class="card">
       <p>The app only connects where you set it up or trigger it: to your NAS or server (SMB, FTP, SFTP, WebDAV), to Google Drive and Dropbox, a wake-up signal in your own network for Wake-on-LAN, and a server on the device itself only (127.0.0.1) for playing network media. Data travels directly between your device and the respective service. Those services' own privacy policies apply.</p>
+      <p><strong>Servers in your home network – only when you start them:</strong> PC access (FTP server) and browser access (web page) make the chosen storage reachable for devices on your Wi-Fi. Browser access requires an access code that is created anew on every start, only accepts devices from your own network and – like FTP – transfers unencrypted. Both run until you stop them; a notification shows this.</p>
+      <p><strong>TV streaming:</strong> to find TVs, the app sends discovery requests into your Wi-Fi (SSDP and mDNS). During playback the chosen TV fetches the file from a server that only serves devices in your own network; Chromecast devices are controlled directly in your home network. No data goes to the internet in the process.</p>
     </div>
 
     <h2>Google Drive</h2>
